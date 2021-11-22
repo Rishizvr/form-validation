@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+/**
+* changing default styles of browser
+**/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+/**
+* style rules for content section
+**/
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  background-color: limegreen;
+  width: 55%;
+  min-height: 100vh;
+  padding: 10px 20px;
+}
+
+.image {
+  background-image: url("images/cyborg-88.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 75%;
+}
+
+.text {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/**
+* style rules for form section
+**/
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  padding: 50px;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+input:focus {
+  border: 2px solid limegreen;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form div {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+form div input {
+  border-radius: 8px;
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border: 2px solid rgba(163, 163, 163, 0.856);
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  padding: 0 30px;
+}
+
+button {
+  width: 100%;
+  height: 45px;
+  margin-top: 15px;
+  background-color:limegreen;
+  border: 2px solid limegreen;
+  border-radius: 8px;
+  color: #FFF;
+  font-size: 20px;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: opacity 0.1s ease;
+}
+
+button:hover {
+  opacity: 0.82;
+}
+
+/**
+* style rules for social section
+**/
+
+#log-in {
+  color: limegreen;
+}
+
+.question {
+  font-size: 15px;
+}
+
+.btn {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  gap: 15px;
+  margin-top: 15px;
+  background-color: white;
+}
+
+.btn-2 {
+  background-color: #4f70b5;
+  color: white;
+}
+
+.btn-1, 
+.btn-2 {
+  width: 100%;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border: 2px solid lightgray;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+/**
+* style rules for form icons
+**/
+
+form div i {
+  position: absolute;
+  padding: 10px;
+}
+
+.success-icon, 
+.failure-icon {
+  right: 0;
+  opacity: 0;
+}
+
+.success-icon {
+  color: green;
+}
+
+.failure-icon {
+  color: red;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+/**
+* media queries
+**/
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  #form, 
+  .content{
+    width: 100%;
+  }
+
+  .content
+
+  .btn {
+    flex-direction: column;
+  }
+
+  .image {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 425px) {
+  #form {
+    padding: 20px;
+  }
+
+}
